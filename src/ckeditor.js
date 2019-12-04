@@ -28,6 +28,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -54,7 +55,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Alignment
+	Alignment,
+	CodeBlock
 ];
 
 // Editor configuration.
@@ -72,6 +74,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'imageUpload',
 			'blockQuote',
+			'codeBlock',
 			'insertTable',
 			'mediaEmbed',
 			'undo',
